@@ -1,0 +1,2 @@
+Para agregar su info, copien el contenido el php "plantilla"
+a dentro de in div id= cont ingresaran el contenido de su tema

@@ -1,0 +1,484 @@
+.contenedor_tarjeta {
+    margin: 20px;
+}
+
+.contenedor_tarjeta a {
+    display:block;
+}
+
+.contenedor_tarjeta:hover figure {
+    transform: perspective(600px) rotateY(180deg);
+    -webkit-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.25);
+    box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.25);
+}
+
+.contenedor_tarjeta:hover figure img {
+    /* Si queremos podemos aplicar un efecto blur a nuestra imagen al girar */
+    /*filter:blur(2px);*/
+}
+
+figure {
+    width: 300px;
+    height: 350px;
+    margin:0;
+    position: ;
+    transition: all ease .5s;
+    transform-style: preserve-3d;
+    /* Nota:
+        Establecemos que la imagen tendra una rotacion de 0grados al inicio porque si no
+        ponemos esta propiedad nos da un poco de problemas en algunos navegadores al pasar el cursor.
+    */
+    transform: perspective(600px) rotateY(0deg);
+}
+
+figure .frontal,
+figure .trasera {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    transition: all ease .5s;
+}
+
+figure .frontal {
+    display: block;
+    background: white;
+
+    /* Podemos ocultar la imagen al da la vuelta si lo queremos */
+    /*backface-visibility: hidden;*/
+}
+
+figure .trasera {
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    color: #fff;
+    transform: perspective(600px) rotateY(180deg);
+    backface-visibility: hidden;
+    overflow: auto;
+}
+
+.contenedor_tarjeta:nth-child(1) figure .trasera{
+    background: rgba(223,234,241,0.7);
+    background: -moz-linear-gradient(top, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(223,234,241,0.7)), color-stop(100%, rgba(15,99,144,1)));
+    background: -webkit-linear-gradient(top, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+    background: -o-linear-gradient(top, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+    background: -ms-linear-gradient(top, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+    background: linear-gradient(to bottom, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfeaf1', endColorstr='#0f6390', GradientType=0 );
+}
+
+.contenedor_tarjeta:nth-child(2) figure .trasera{
+    background: rgba(251,232,202,0.7);
+    background: -moz-linear-gradient(top, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(251,232,202,0.7)), color-stop(100%, rgba(25,44,72,1)));
+    background: -webkit-linear-gradient(top, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+    background: -o-linear-gradient(top, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+    background: -ms-linear-gradient(top, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+    background: linear-gradient(to bottom, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbe8ca', endColorstr='#192c48', GradientType=0 );
+}
+
+.contenedor_tarjeta:nth-child(3) figure .trasera{
+    background: rgba(95,58,53,0.7);
+    background: -moz-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(95,58,53,0.7)), color-stop(100%, rgba(221,32,47,1)));
+    background: -webkit-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    background: -o-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    background: -ms-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    background: linear-gradient(to bottom, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f3a35', endColorstr='#dd202f', GradientType=0 );
+}.contenedor_tarjeta:nth-child(4) figure .trasera{
+    background: rgba(223,234,241,0.7);
+    background: -moz-linear-gradient(top, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(223,234,241,0.7)), color-stop(100%, rgba(15,99,144,1)));
+    background: -webkit-linear-gradient(top, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+    background: -o-linear-gradient(top, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+    background: -ms-linear-gradient(top, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+    background: linear-gradient(to bottom, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfeaf1', endColorstr='#0f6390', GradientType=0 );
+}
+
+.contenedor_tarjeta:nth-child(5) figure .trasera{
+    background: rgba(251,232,202,0.7);
+    background: -moz-linear-gradient(top, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(251,232,202,0.7)), color-stop(100%, rgba(25,44,72,1)));
+    background: -webkit-linear-gradient(top, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+    background: -o-linear-gradient(top, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+    background: -ms-linear-gradient(top, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+    background: linear-gradient(to bottom, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbe8ca', endColorstr='#192c48', GradientType=0 );
+}
+
+.contenedor_tarjeta:nth-child(6) figure .trasera{
+    background: rgba(95,58,53,0.7);
+    background: -moz-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(95,58,53,0.7)), color-stop(100%, rgba(221,32,47,1)));
+    background: -webkit-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    background: -o-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    background: -ms-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    background: linear-gradient(to bottom, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f3a35', endColorstr='#dd202f', GradientType=0 );
+}.contenedor_tarjeta:nth-child(12) figure .trasera{
+    background: rgba(223,234,241,0.7);
+    background: -moz-linear-gradient(top, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(223,234,241,0.7)), color-stop(100%, rgba(15,99,144,1)));
+    background: -webkit-linear-gradient(top, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+    background: -o-linear-gradient(top, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+    background: -ms-linear-gradient(top, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+    background: linear-gradient(to bottom, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfeaf1', endColorstr='#0f6390', GradientType=0 );
+}
+
+.contenedor_tarjeta:nth-child(7) figure .trasera{
+    background: rgba(251,232,202,0.7);
+    background: -moz-linear-gradient(top, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(251,232,202,0.7)), color-stop(100%, rgba(25,44,72,1)));
+    background: -webkit-linear-gradient(top, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+    background: -o-linear-gradient(top, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+    background: -ms-linear-gradient(top, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+    background: linear-gradient(to bottom, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbe8ca', endColorstr='#192c48', GradientType=0 );
+}
+
+.contenedor_tarjeta:nth-child(8) figure .trasera{
+    background: rgba(95,58,53,0.7);
+    background: -moz-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(95,58,53,0.7)), color-stop(100%, rgba(221,32,47,1)));
+    background: -webkit-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    background: -o-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    background: -ms-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    background: linear-gradient(to bottom, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f3a35', endColorstr='#dd202f', GradientType=0 );
+}.contenedor_tarjeta:nth-child(9) figure .trasera{
+    background: rgba(223,234,241,0.7);
+    background: -moz-linear-gradient(top, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(223,234,241,0.7)), color-stop(100%, rgba(15,99,144,1)));
+    background: -webkit-linear-gradient(top, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+    background: -o-linear-gradient(top, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+    background: -ms-linear-gradient(top, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+    background: linear-gradient(to bottom, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfeaf1', endColorstr='#0f6390', GradientType=0 );
+}
+
+.contenedor_tarjeta:nth-child(10) figure .trasera{
+    background: rgba(251,232,202,0.7);
+    background: -moz-linear-gradient(top, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(251,232,202,0.7)), color-stop(100%, rgba(25,44,72,1)));
+    background: -webkit-linear-gradient(top, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+    background: -o-linear-gradient(top, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+    background: -ms-linear-gradient(top, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+    background: linear-gradient(to bottom, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbe8ca', endColorstr='#192c48', GradientType=0 );
+}
+
+.contenedor_tarjeta:nth-child(11) figure .trasera{
+    background: rgba(95,58,53,0.7);
+    background: -moz-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(95,58,53,0.7)), color-stop(100%, rgba(221,32,47,1)));
+    background: -webkit-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    background: -o-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    background: -ms-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    background: linear-gradient(to bottom, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f3a35', endColorstr='#dd202f', GradientType=0 );
+}
+
+figure .trasera .titulo {
+    color: #fff;
+    font-weight: normal;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    text-align-last: center;
+}
+
+figure .trasera hr {
+    height: 2px;
+    background: #fff;
+    border: none;
+    margin-bottom: 20px;
+    opacity: .5;
+}
+
+figure .trasera p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 22px;
+    font-size: 50px;
+    text-align-last: center;
+    padding-top: 10%;
+}
+
+@media screen and (max-width: 992px) { 
+    figure .trasera {
+        /*position: relative;*/
+        backface-visibility:visible;
+        transform: perspective(600px) rotateY(0deg);
+    }
+
+    .contenedor_tarjeta:hover figure {
+        transform: perspective(600px) rotateY(0deg);    
+    }
+
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+#resultado h3 {
+    background red;
+}
+#resultado span{
+    color: #000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.t{
+    
+    font-size: 40px;
+    padding-left: 30%;
+    margin-top: 2vh;
+    padding-right: 60px;
+    color: #1C2833;
+    border-radius: 0px 30px 30px 0px;  
+    font-family: Acme;
+    color: white;
+    background-color: #C0392B;
+    box-shadow: 10px 10px 0px  0px #46a2fd, 20px 20px #83c1fd, 30px 30px 14px #acd5fd;
+}
+
+
+
+.btn-open-popup{
+    position: fixed;
+    top: 90%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    display: block;
+    background: #ECF0F1;
+    background: #DC7633;
+    padding: 20px ;
+    border-radius: 50px;
+}
+
+.btn-open-popup:hover{
+    box-shadow: 5px 5px 5px  5px #808B96;
+}
+
+
+.boton_enviar{
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    background-color: #F1C40F;
+    padding: 10px;
+    color: white;
+    margin: 10px;
+    border-radius: 10px;
+    border: 0px;
+}
+
+.boton_enviar:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+
+.container-all{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 600ms;
+}
+
+
+.container-all:target{
+    background: rgba(0,0,0,0.8);
+    visibility: visible;
+    opacity: 1;
+}
+
+.container-all:target .popup{
+    top: 40%;
+    left: 42%;
+    transform: rotate(0deg) translate(-50%, -50%);
+    visibility: visible;
+}
+
+.popup{
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
+    height: 550px;
+    position: absolute; ;
+    display: flex;
+    background: white;
+    visibility: hidden;
+    top: -80%;
+    left: -80%;
+    transform: rotate(90deg) translate(-150%, 230%);
+    transition: all 600ms;
+}
+
+
+.img{
+    width: 40%;
+    background-image: url(../img/fond.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img2{
+    width: 40%;
+    background-image: url(../img/);/*  Agregas tu imagen para los ejercicios*/
+    background-image: url(../img/colo.jpg);/*  Agregas tu imagen para los ejercicios*/
+    background-size: cover;
+    background-position: center;
+}
+.img3{
+    width: 40%;
+    background-image: url(../img/);
+    background-image: url(../img/letras.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img4{
+    width: 40%;
+    background-image: url(../img/);
+    background-image: url(../img/numeros.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container-text{
+    width: 60%;
+    padding: 50px;
+    overflow-y: auto;
+}
+
+
+.container-text h1{
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    padding: 0px;
+
+}
+.co{
+    background-color: #ECF0F1;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+.container-text p{
+    text-align: center;
+
+}
+.container-text p{
+
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+
+.btn-close-popup{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    padding: 20px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    line-height: 10px;
+}
+
+@media screen and (max-width: 900px){
+    .popup{
+        flex-direction: column;
+        height: 100%;
+        max-height: 800px;
+    }
+    
+    .img{
+        width: 100%;
+        height: 40%;
+    }
+    
+    .container-text{
+        width: 100%;
+        height: 60%;
+        padding: 80px;
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+    .container-text{
+        padding: 20px;
+    }
+    
+    .container-text h1{
+        font-size: 20px;
+    }
+    
+    .container-text p{
+        font-size: 12px;
+    }
+}
+
+
+
+.main-menu{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-menu a{
+    text-decoration:none;
+    cursor: default;
+}
+
+.main-menu .option{
+    width: 200px;
+    height: 200px;
+    background: #f1f1f1;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 300ms;
+}
+.main-menu .option:hover{
+    box-shadow: 10px 10px 0px  0px #FFB6AE, 20px 20px #FFE4E1, 30px 30px 14px #FFF4E1;
+    transform: translate(-5px, -5px);
+}
+
+
+.main-menu img{
+    width: 40%;
+    margin-top: 30px;
+}
+
+.main-menu h2{
+    font-size: 18px;
+    margin-top: 10px;
+    color: #505050;
+}
+
